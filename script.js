@@ -9,7 +9,7 @@ for(var i =0; i < squares; i++) {
         e.target.style.backgroundColor = `#${color}`
         e.target.style.boxShadow = `0 0 2px #${color}, 0 0 10px #${color}`
     })
-     square.addEventListener("touchmove", (e) => {
+     square.addEventListener("touchstart", (e) => {
         var color = colors[Math.floor(Math.random() * colors.length)];
         e.target.style.backgroundColor = `#${color}`
         e.target.style.boxShadow = `0 0 2px #${color}, 0 0 10px #${color}`
